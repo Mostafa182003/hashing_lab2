@@ -1,10 +1,13 @@
 def hash_division(key, size):
-    # Возвращает индекс хэш-таблицы для заданного ключа методом деления
+    # Returns the hash table index for the given key by division
     return key % size
 
-hash_table = [None] * 10 # создаем хэш-таблицу из 10 элементов
-keys = [3, 7, 12, 15, 21, 27, 31, 42, 56, 63] # список ключей
+hash_table = [] # create a hash table with 10 elements
+keys = [3, 7, 12, 15, 21, 27, 31, 42, 56, 63] # list of keys
 for key in keys:
-    index = hash_division(key, len(hash_table)) # вычисляем индекс для ключа
-    hash_table[index] = key # сохраняем ключ в хэш-таблицу
-print(hash_table)
+    index = hash_division(key, len(keys)) # calculate the index for the key
+    hash_table.append(index) # store the key in a hash table
+print(hash_table) 
+
+
+
