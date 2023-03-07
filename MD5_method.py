@@ -1,7 +1,7 @@
 import hashlib
 
 # Text input
-text = input("Введите текст для хеширования: ")
+text = input("Enter text to hash: ")
 
 # Convert text to bytes
 text_bytes = text.encode('utf-8')
@@ -16,4 +16,4 @@ md5_hash.update(text_bytes)
 hash_hex = md5_hash.hexdigest()
 
 # Output to console
-print("MD5 hash текста:", hash_hex)
+print("MD5 hash of text:", hash_hex)
